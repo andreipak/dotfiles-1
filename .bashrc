@@ -17,4 +17,11 @@ eval `dircolors ~/.dircolors`
 # vim wrapper for bash to make ctrl-s and ctrl-q work
 source ~/.vim/.bashrc
 
-
+# useful function to switch between java versions
+# switch-to-java [version-number]
+function switch-to-java(){
+    if [[ -z $1 ]]; then echo $JAVA_HOME;return; fi
+    export PATH=`echo $PATH | sed s/jdk[0-9.]*/jdk$1/`
+    export JAVA_HOME=`echo $PATH | tr ":" "\n" | grep jdk$1 | sed "s/\\/bin$//"`
+    echo "JAVA_HOME = $JAVA_HOME"
+}
