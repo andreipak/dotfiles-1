@@ -39,3 +39,5 @@
     untracked = 225 
     nobranch = 228
 
+[credential]
+    helper = cache --timeout=3600
