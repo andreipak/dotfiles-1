@@ -39,7 +39,8 @@ color stat-untracked color225 color237
 color diff-header color231 color243
 color diff-chunk color183 color237
 color diff-add color190 color237
-color diff-del color196 color237
+color diff-del color124 color237
+color diff-stat color153 color237
 
 color diff-oldmode color220 color237
 color diff-newmode color220 color237
