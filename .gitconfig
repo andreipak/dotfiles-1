@@ -1,6 +1,10 @@
 [user]
     name = troydm
     email = d.geurkov@gmail.com
+
+[push]
+	default = simple
+
 [alias]
     co = checkout
     ci = commit
